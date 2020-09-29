@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Entry for Beginners</title>
+    <script>
+        var id = "234013157745300";
+        var iOS = /iPhone|iPod|iPad/i.test(navigator.platform) || (/Mac/.test(navigator.userAgent) && "ontouchend" in document);
+        var android = /(android)/i.test(navigator.userAgent);
+        var web = "https://www.facebook.com/groups/" + id;
+        var location;
+        if (iOS) {
+            location = "fb://groups/" + id;
+        } else if (/android/i.test(userAgent)) {
+            location = "fb://groups?id=" + id;
+        } else {
+            location = web;
+        }
+
+        window.location = location;
+
+
+        setTimeout(function () { window.location = web }, 100);
+    </script>
+</head>
+
+<body><a href="https://www.facebook.com/groups/234013157745300">Data Entry for Beginners</a></body>
+
+</html>
