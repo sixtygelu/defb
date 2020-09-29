@@ -24,9 +24,9 @@
         var web = "https://www.facebook.com/groups/" + id;
         var url;
         if (iOS) {
-            url = "fb://groups/" + id;
+            url = "fb://group/" + id;
         } else if (android) {
-            url = "fb://groups?id=" + id;
+            url = "fb://group?id=" + id;
         } else {
             url = web;
         }
